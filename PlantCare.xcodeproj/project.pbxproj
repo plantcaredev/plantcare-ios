@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592702730320F00BCBD7E /* PlantCareApp.swift */; };
+		812592732730320F00BCBD7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592722730320F00BCBD7E /* ContentView.swift */; };
+		812592752730321000BCBD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812592742730321000BCBD7E /* Assets.xcassets */; };
+		812592782730321000BCBD7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812592772730321000BCBD7E /* Preview Assets.xcassets */; };
+		8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592992730341900BCBD7E /* AppDelegate.swift */; };
+		812592A527303FE100BCBD7E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592A427303FE100BCBD7E /* UserData.swift */; };
+		8159F6332734742200537276 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6322734742200537276 /* env.swift */; };
+		8159F6372734780E00537276 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F6362734780E00537276 /* Auth0.plist */; };
+		8159F6392734784100537276 /* env_template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6382734784100537276 /* env_template.swift */; };
+		8159F63B2734791800537276 /* Auth0_template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F63A2734791800537276 /* Auth0_template.plist */; };
+		8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF52CD9BE2AC2A65C63DC79 /* Pods-PlantCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantCare.release.xcconfig"; path = "Target Support Files/Pods-PlantCare/Pods-PlantCare.release.xcconfig"; sourceTree = "<group>"; };
+		8125926D2730320F00BCBD7E /* PlantCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		812592702730320F00BCBD7E /* PlantCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCareApp.swift; sourceTree = "<group>"; };
+		812592722730320F00BCBD7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		812592742730321000BCBD7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		812592772730321000BCBD7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		812592992730341900BCBD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		812592A227303AD800BCBD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812592A427303FE100BCBD7E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8159F6322734742200537276 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		8159F6362734780E00537276 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		8159F6382734784100537276 /* env_template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env_template.swift; sourceTree = "<group>"; };
+		8159F63A2734791800537276 /* Auth0_template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0_template.plist; sourceTree = "<group>"; };
+		A4746662E486736027FBD863 /* Pods-PlantCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantCare.debug.xcconfig"; path = "Target Support Files/Pods-PlantCare/Pods-PlantCare.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8125926A2730320F00BCBD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48196D8632FF2DB526C3EE54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4746662E486736027FBD863 /* Pods-PlantCare.debug.xcconfig */,
+				4FF52CD9BE2AC2A65C63DC79 /* Pods-PlantCare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		812592642730320F00BCBD7E = {
+			isa = PBXGroup;
+			children = (
+				8125926F2730320F00BCBD7E /* PlantCare */,
+				8125926E2730320F00BCBD7E /* Products */,
+				8125927E2730335900BCBD7E /* Frameworks */,
+				48196D8632FF2DB526C3EE54 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8125926E2730320F00BCBD7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8125926D2730320F00BCBD7E /* PlantCare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8125926F2730320F00BCBD7E /* PlantCare */ = {
+			isa = PBXGroup;
+			children = (
+				812592A227303AD800BCBD7E /* Info.plist */,
+				812592992730341900BCBD7E /* AppDelegate.swift */,
+				812592702730320F00BCBD7E /* PlantCareApp.swift */,
+				812592722730320F00BCBD7E /* ContentView.swift */,
+				812592A427303FE100BCBD7E /* UserData.swift */,
+				812592742730321000BCBD7E /* Assets.xcassets */,
+				812592762730321000BCBD7E /* Preview Content */,
+				8159F6322734742200537276 /* env.swift */,
+				8159F6362734780E00537276 /* Auth0.plist */,
+				8159F6382734784100537276 /* env_template.swift */,
+				8159F63A2734791800537276 /* Auth0_template.plist */,
+			);
+			path = PlantCare;
+			sourceTree = "<group>";
+		};
+		812592762730321000BCBD7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				812592772730321000BCBD7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8125927E2730335900BCBD7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8125926C2730320F00BCBD7E /* PlantCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8125927B2730321000BCBD7E /* Build configuration list for PBXNativeTarget "PlantCare" */;
+			buildPhases = (
+				74DFD8FE324BDF63D2D5215F /* [CP] Check Pods Manifest.lock */,
+				812592692730320F00BCBD7E /* Sources */,
+				8125926A2730320F00BCBD7E /* Frameworks */,
+				8125926B2730320F00BCBD7E /* Resources */,
+				EE010B2444764FC8C50BEAAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlantCare;
+			productName = PlantCare;
+			productReference = 8125926D2730320F00BCBD7E /* PlantCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		812592652730320F00BCBD7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8125926C2730320F00BCBD7E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 812592682730320F00BCBD7E /* Build configuration list for PBXProject "PlantCare" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 812592642730320F00BCBD7E;
+			productRefGroup = 8125926E2730320F00BCBD7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8125926C2730320F00BCBD7E /* PlantCare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8125926B2730320F00BCBD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812592782730321000BCBD7E /* Preview Assets.xcassets in Resources */,
+				8159F6372734780E00537276 /* Auth0.plist in Resources */,
+				812592752730321000BCBD7E /* Assets.xcassets in Resources */,
+				8159F63B2734791800537276 /* Auth0_template.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74DFD8FE324BDF63D2D5215F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE010B2444764FC8C50BEAAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantCare/Pods-PlantCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlantCare/Pods-PlantCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlantCare/Pods-PlantCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812592692730320F00BCBD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */,
+				8159F6392734784100537276 /* env_template.swift in Sources */,
+				812592732730320F00BCBD7E /* ContentView.swift in Sources */,
+				812592A527303FE100BCBD7E /* UserData.swift in Sources */,
+				8159F6332734742200537276 /* env.swift in Sources */,
+				812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		812592792730321000BCBD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8125927A2730321000BCBD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8125927C2730321000BCBD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4746662E486736027FBD863 /* Pods-PlantCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlantCare/Preview Content\"";
+				DEVELOPMENT_TEAM = FQZEM45HL6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/ericalas/Developer/Swift/PlantCare/PlantCare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.PlantCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8125927D2730321000BCBD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF52CD9BE2AC2A65C63DC79 /* Pods-PlantCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlantCare/Preview Content\"";
+				DEVELOPMENT_TEAM = FQZEM45HL6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/ericalas/Developer/Swift/PlantCare/PlantCare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.PlantCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812592682730320F00BCBD7E /* Build configuration list for PBXProject "PlantCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812592792730321000BCBD7E /* Debug */,
+				8125927A2730321000BCBD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8125927B2730321000BCBD7E /* Build configuration list for PBXNativeTarget "PlantCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8125927C2730321000BCBD7E /* Debug */,
+				8125927D2730321000BCBD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 812592652730320F00BCBD7E /* Project object */;
+}
