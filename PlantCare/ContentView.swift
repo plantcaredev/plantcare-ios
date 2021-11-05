@@ -10,10 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
 
-    // MARK: move to onboard view later
-    @State var fullName = ""
-    @State var email = ""
-
     var body: some View {
         VStack {
             if store.state.plantCare.loggedInStatus == .unknown {
