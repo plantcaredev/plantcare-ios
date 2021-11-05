@@ -17,6 +17,15 @@
 		8159F6372734780E00537276 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F6362734780E00537276 /* Auth0.plist */; };
 		8159F6392734784100537276 /* env_template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6382734784100537276 /* env_template.swift */; };
 		8159F63B2734791800537276 /* Auth0_template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F63A2734791800537276 /* Auth0_template.plist */; };
+		8159F64027347B2800537276 /* PlantCare.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F63F27347B2800537276 /* PlantCare.reducer.swift */; };
+		8159F64227347B9E00537276 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64127347B9E00537276 /* Store.swift */; };
+		8159F64427347BF000537276 /* PlantCare.state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64327347BF000537276 /* PlantCare.state.swift */; };
+		8159F64627347C2700537276 /* PlantCare.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64527347C2700537276 /* PlantCare.actions.swift */; };
+		8159F64927347E4000537276 /* ObservableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64827347E4000537276 /* ObservableState.swift */; };
+		8159F64C27347F8A00537276 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64B27347F8A00537276 /* AuthApi.swift */; };
+		8159F64F273580CC00537276 /* InitialOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64E273580CC00537276 /* InitialOnBoarding.swift */; };
+		8159F65127358B0600537276 /* OnBoardingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F65027358B0600537276 /* OnBoardingForm.swift */; };
+		8159F65527358E9200537276 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F65427358E9200537276 /* LabelTextField.swift */; };
 		8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +44,15 @@
 		8159F6362734780E00537276 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		8159F6382734784100537276 /* env_template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env_template.swift; sourceTree = "<group>"; };
 		8159F63A2734791800537276 /* Auth0_template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0_template.plist; sourceTree = "<group>"; };
+		8159F63F27347B2800537276 /* PlantCare.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCare.reducer.swift; sourceTree = "<group>"; };
+		8159F64127347B9E00537276 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8159F64327347BF000537276 /* PlantCare.state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCare.state.swift; sourceTree = "<group>"; };
+		8159F64527347C2700537276 /* PlantCare.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCare.actions.swift; sourceTree = "<group>"; };
+		8159F64827347E4000537276 /* ObservableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableState.swift; sourceTree = "<group>"; };
+		8159F64B27347F8A00537276 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		8159F64E273580CC00537276 /* InitialOnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnBoarding.swift; sourceTree = "<group>"; };
+		8159F65027358B0600537276 /* OnBoardingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingForm.swift; sourceTree = "<group>"; };
+		8159F65427358E9200537276 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
 		A4746662E486736027FBD863 /* Pods-PlantCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantCare.debug.xcconfig"; path = "Target Support Files/Pods-PlantCare/Pods-PlantCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +98,11 @@
 		8125926F2730320F00BCBD7E /* PlantCare */ = {
 			isa = PBXGroup;
 			children = (
+				8159F65227358E6100537276 /* components */,
+				8159F64D273580B900537276 /* screens */,
+				8159F64A27347F7A00537276 /* api */,
+				8159F64727347E2A00537276 /* utils */,
+				8159F63C27347ADA00537276 /* modules */,
 				812592A227303AD800BCBD7E /* Info.plist */,
 				812592992730341900BCBD7E /* AppDelegate.swift */,
 				812592702730320F00BCBD7E /* PlantCareApp.swift */,
@@ -109,6 +132,66 @@
 				4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8159F63C27347ADA00537276 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				8159F63E27347B0500537276 /* PlantCare */,
+				8159F64127347B9E00537276 /* Store.swift */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		8159F63E27347B0500537276 /* PlantCare */ = {
+			isa = PBXGroup;
+			children = (
+				8159F63F27347B2800537276 /* PlantCare.reducer.swift */,
+				8159F64327347BF000537276 /* PlantCare.state.swift */,
+				8159F64527347C2700537276 /* PlantCare.actions.swift */,
+			);
+			path = PlantCare;
+			sourceTree = "<group>";
+		};
+		8159F64727347E2A00537276 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8159F64827347E4000537276 /* ObservableState.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		8159F64A27347F7A00537276 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				8159F64B27347F8A00537276 /* AuthApi.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		8159F64D273580B900537276 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				8159F64E273580CC00537276 /* InitialOnBoarding.swift */,
+				8159F65027358B0600537276 /* OnBoardingForm.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		8159F65227358E6100537276 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				8159F65327358E6700537276 /* LabelTextField */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		8159F65327358E6700537276 /* LabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8159F65427358E9200537276 /* LabelTextField.swift */,
+			);
+			path = LabelTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,12 +310,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8159F64C27347F8A00537276 /* AuthApi.swift in Sources */,
 				8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */,
+				8159F64427347BF000537276 /* PlantCare.state.swift in Sources */,
 				8159F6392734784100537276 /* env_template.swift in Sources */,
 				812592732730320F00BCBD7E /* ContentView.swift in Sources */,
+				8159F64F273580CC00537276 /* InitialOnBoarding.swift in Sources */,
+				8159F64227347B9E00537276 /* Store.swift in Sources */,
+				8159F64027347B2800537276 /* PlantCare.reducer.swift in Sources */,
+				8159F65127358B0600537276 /* OnBoardingForm.swift in Sources */,
 				812592A527303FE100BCBD7E /* UserData.swift in Sources */,
+				8159F64627347C2700537276 /* PlantCare.actions.swift in Sources */,
 				8159F6332734742200537276 /* env.swift in Sources */,
 				812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */,
+				8159F64927347E4000537276 /* ObservableState.swift in Sources */,
+				8159F65527358E9200537276 /* LabelTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

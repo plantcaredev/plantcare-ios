@@ -8,25 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var userData: UserData = UserData()
+    @ObservedObject private var store = ObservableStore(store: plantCareStore)
+
+    // MARK: move to onboard view later
+    @State var fullName = ""
+    @State var email = ""
 
     var body: some View {
         VStack {
-            if userData.isLoggedIn() {
-                VStack {
-                    Text("Hello \(userData.userName)")
-                    Button(action: userData.logout) {
-                        Text("Logout")
-                    }
-                }
+            if store.state.plantCare.loggedInStatus == .unknown {
+                Text("Mock Splash Screen")
             }
-            if userData.isLoggedIn() == false {
-                Button(action: userData.login) {
+            if store.state.plantCare.loggedInStatus == .loggedOut {
+                Text("Hello, Friend")
+                Button(action: store.dispatch(PlantCareThunkLogin)) {
                     Text("Please Sign in")
                 }
             }
-            
-            
+
+            if store.state.plantCare.loggedInStatus == .loggedIn && store.state.plantCare.needsOnBoarding {
+                InitialOnBoarding(fullName: store.state.plantCare.name, email: store.state.plantCare.email)
+            }
+
+            if store.state.plantCare.loggedInStatus == .loggedIn && !store.state.plantCare.needsOnBoarding {
+                Text("Hello, \(store.state.plantCare.name)")
+                Text("Your email is: \(store.state.plantCare.email)")
+                Button(action: store.dispatch(PlantCareThunkLogout)) {
+                    Text("Logout")
+                }
+            }
         }
     }
 

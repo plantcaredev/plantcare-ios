@@ -7,5 +7,7 @@ target 'PlantCare' do
 
   # Pods for PlantCare
   pod 'Auth0', '~> 1.0'
+  pod 'ReSwift'
+  pod 'ReSwiftThunk'
 
 end
