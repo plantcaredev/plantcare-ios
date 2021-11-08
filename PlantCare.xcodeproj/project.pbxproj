@@ -13,6 +13,8 @@
 		812592782730321000BCBD7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812592772730321000BCBD7E /* Preview Assets.xcassets */; };
 		8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592992730341900BCBD7E /* AppDelegate.swift */; };
 		812592A527303FE100BCBD7E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592A427303FE100BCBD7E /* UserData.swift */; };
+		8154E43C27397F800070B0E9 /* OnboardingInfoConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E43B27397F800070B0E9 /* OnboardingInfoConfirmation.swift */; };
+		8154E43E273980950070B0E9 /* OnboardingWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E43D273980950070B0E9 /* OnboardingWelcome.swift */; };
 		8159F6332734742200537276 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6322734742200537276 /* env.swift */; };
 		8159F6372734780E00537276 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F6362734780E00537276 /* Auth0.plist */; };
 		8159F6392734784100537276 /* env_template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6382734784100537276 /* env_template.swift */; };
@@ -24,8 +26,10 @@
 		8159F64927347E4000537276 /* ObservableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64827347E4000537276 /* ObservableState.swift */; };
 		8159F64C27347F8A00537276 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64B27347F8A00537276 /* AuthApi.swift */; };
 		8159F64F273580CC00537276 /* InitialOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F64E273580CC00537276 /* InitialOnBoarding.swift */; };
-		8159F65127358B0600537276 /* OnBoardingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F65027358B0600537276 /* OnBoardingForm.swift */; };
 		8159F65527358E9200537276 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F65427358E9200537276 /* LabelTextField.swift */; };
+		8159F65C2736FA5300537276 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8159F65A2736FA5300537276 /* Mulish-Regular.ttf */; };
+		8159F65D2736FA5300537276 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8159F65B2736FA5300537276 /* Mulish-Bold.ttf */; };
+		8159F65F2736FBD600537276 /* Mulish-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8159F65E2736FBD600537276 /* Mulish-ExtraBold.ttf */; };
 		8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,8 @@
 		812592992730341900BCBD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		812592A227303AD800BCBD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812592A427303FE100BCBD7E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8154E43B27397F800070B0E9 /* OnboardingInfoConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoConfirmation.swift; sourceTree = "<group>"; };
+		8154E43D273980950070B0E9 /* OnboardingWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcome.swift; sourceTree = "<group>"; };
 		8159F6322734742200537276 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		8159F6362734780E00537276 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		8159F6382734784100537276 /* env_template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env_template.swift; sourceTree = "<group>"; };
@@ -51,8 +57,10 @@
 		8159F64827347E4000537276 /* ObservableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableState.swift; sourceTree = "<group>"; };
 		8159F64B27347F8A00537276 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		8159F64E273580CC00537276 /* InitialOnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnBoarding.swift; sourceTree = "<group>"; };
-		8159F65027358B0600537276 /* OnBoardingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingForm.swift; sourceTree = "<group>"; };
 		8159F65427358E9200537276 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
+		8159F65A2736FA5300537276 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		8159F65B2736FA5300537276 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		8159F65E2736FBD600537276 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A4746662E486736027FBD863 /* Pods-PlantCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantCare.debug.xcconfig"; path = "Target Support Files/Pods-PlantCare/Pods-PlantCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +117,7 @@
 				812592722730320F00BCBD7E /* ContentView.swift */,
 				812592A427303FE100BCBD7E /* UserData.swift */,
 				812592742730321000BCBD7E /* Assets.xcassets */,
+				8159F6592736FA5300537276 /* mullish */,
 				812592762730321000BCBD7E /* Preview Content */,
 				8159F6322734742200537276 /* env.swift */,
 				8159F6362734780E00537276 /* Auth0.plist */,
@@ -132,6 +141,15 @@
 				4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8154E43A27397F680070B0E9 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				8154E43B27397F800070B0E9 /* OnboardingInfoConfirmation.swift */,
+				8154E43D273980950070B0E9 /* OnboardingWelcome.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 		8159F63C27347ADA00537276 /* modules */ = {
@@ -172,8 +190,7 @@
 		8159F64D273580B900537276 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				8159F64E273580CC00537276 /* InitialOnBoarding.swift */,
-				8159F65027358B0600537276 /* OnBoardingForm.swift */,
+				8159F6562736F3C700537276 /* OnBoarding */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -192,6 +209,25 @@
 				8159F65427358E9200537276 /* LabelTextField.swift */,
 			);
 			path = LabelTextField;
+			sourceTree = "<group>";
+		};
+		8159F6562736F3C700537276 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				8154E43A27397F680070B0E9 /* components */,
+				8159F64E273580CC00537276 /* InitialOnBoarding.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		8159F6592736FA5300537276 /* mullish */ = {
+			isa = PBXGroup;
+			children = (
+				8159F65A2736FA5300537276 /* Mulish-Regular.ttf */,
+				8159F65E2736FBD600537276 /* Mulish-ExtraBold.ttf */,
+				8159F65B2736FA5300537276 /* Mulish-Bold.ttf */,
+			);
+			path = mullish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,10 @@
 				812592782730321000BCBD7E /* Preview Assets.xcassets in Resources */,
 				8159F6372734780E00537276 /* Auth0.plist in Resources */,
 				812592752730321000BCBD7E /* Assets.xcassets in Resources */,
+				8159F65D2736FA5300537276 /* Mulish-Bold.ttf in Resources */,
 				8159F63B2734791800537276 /* Auth0_template.plist in Resources */,
+				8159F65C2736FA5300537276 /* Mulish-Regular.ttf in Resources */,
+				8159F65F2736FBD600537276 /* Mulish-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +350,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8159F64C27347F8A00537276 /* AuthApi.swift in Sources */,
+				8154E43E273980950070B0E9 /* OnboardingWelcome.swift in Sources */,
 				8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */,
 				8159F64427347BF000537276 /* PlantCare.state.swift in Sources */,
 				8159F6392734784100537276 /* env_template.swift in Sources */,
 				812592732730320F00BCBD7E /* ContentView.swift in Sources */,
+				8154E43C27397F800070B0E9 /* OnboardingInfoConfirmation.swift in Sources */,
 				8159F64F273580CC00537276 /* InitialOnBoarding.swift in Sources */,
 				8159F64227347B9E00537276 /* Store.swift in Sources */,
 				8159F64027347B2800537276 /* PlantCare.reducer.swift in Sources */,
-				8159F65127358B0600537276 /* OnBoardingForm.swift in Sources */,
 				812592A527303FE100BCBD7E /* UserData.swift in Sources */,
 				8159F64627347C2700537276 /* PlantCare.actions.swift in Sources */,
 				8159F6332734742200537276 /* env.swift in Sources */,
