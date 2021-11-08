@@ -17,7 +17,7 @@ struct InitialOnBoarding: View {
     @State var fullNameFormValue: String
     @State var emailFormValue: String
 
-    @State private var selection = 2
+    @State private var selection = 1
 
     init (fullName: String, email: String) {
         self.fullName = fullName

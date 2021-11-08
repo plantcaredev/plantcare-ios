@@ -13,13 +13,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if store.state.plantCare.loggedInStatus == .unknown {
-                Text("Mock Splash Screen")
+                LoadingScreen()
             }
             if store.state.plantCare.loggedInStatus == .loggedOut {
-                Text("Hello, Friend")
-                Button(action: store.dispatch(PlantCareThunkLogin)) {
-                    Text("Please Sign in")
-                }
+                LoginScreen()
             }
 
             if store.state.plantCare.loggedInStatus == .loggedIn && store.state.plantCare.needsOnBoarding {

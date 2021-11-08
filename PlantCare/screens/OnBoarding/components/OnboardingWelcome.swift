@@ -35,11 +35,11 @@ struct OnboardingWelcome: View {
                         }
                     } label: {
                         Text("Let's get started!")
+                            .foregroundColor(Color("DarkPurple"))
+                            .padding()
+                            .background(.white)
+                            .cornerRadius(4)
                     }
-                        .foregroundColor(Color("DarkPurple"))
-                        .padding()
-                        .background(.white)
-                        .cornerRadius(4)
                 }
             }
                 .padding()

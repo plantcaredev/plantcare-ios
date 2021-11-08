@@ -40,22 +40,22 @@ struct OnboardingInfoConfirmation: View {
                     } label: {
 
                         Text("Confirm")
+                            .foregroundColor(Color("DarkPurple"))
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(.white)
+                            .cornerRadius(4)
                     }
-                        .foregroundColor(Color("DarkPurple"))
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(.white)
-                        .cornerRadius(4)
 
                     Button(action: store.dispatch(PlantCareThunkLogout)) {
                         Text("Logout")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color("DarkPurple"))
+                            .border(Color.white, width: 2)
+                            .cornerRadius(4)
                     }
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color("DarkPurple"))
-                        .border(Color.white, width: 2)
-                        .cornerRadius(4)
 
                 }
                     .padding()
