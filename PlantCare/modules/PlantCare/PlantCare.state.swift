@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum AvailableViews {
+    case home
+    case plants
+    case search
+    case settings
+}
+
 enum LoggedInStatus {
     case loggedIn
     case loggedOut
@@ -17,4 +24,5 @@ struct PlantCareState {
     var email: String = ""
     var loggedInStatus: LoggedInStatus = .unknown
     var needsOnBoarding: Bool = false
+    var selectedView: AvailableViews = .home
 }

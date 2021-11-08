@@ -80,10 +80,6 @@ class AuthApiClass: ObservableObject {
                 let name = user["name"] as? String
                 let email = user["email"] as? String
                 self.registerUser(name: name ?? "", email: email ?? "", sub: sub, dispatch: dispatch)
-//                DispatchQueue.main.async {
-//                    dispatch(PlantCareActionSetUserData(newName: name ?? "", newEmail: email ?? ""))
-//                    dispatch(PlantCareActionSetLoggedInStatus(loggedInStatus: .loggedIn))
-//                }
             case .failure(let error):
                 print(error)
             }
@@ -92,7 +88,7 @@ class AuthApiClass: ObservableObject {
     
     func registerUser(name: String, email: String, sub: String, dispatch: @escaping DispatchFunction) {
         print("calling backend API with: \(name), \(email), \(sub)")
-        let needsOnBoarding = true // TODO: from backend API
+        let needsOnBoarding = false // TODO: from backend API
         
         DispatchQueue.main.async {
             dispatch(PlantCareActionSetUserData(newName: name, newEmail: email))

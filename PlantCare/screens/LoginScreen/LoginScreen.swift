@@ -31,6 +31,7 @@ struct LoginScreen: View {
 
                     Button(action: store.dispatch(PlantCareThunkLogin)) {
                         Text("Login/Register")
+                            .font(.custom("Mulish-Regular", size: 16))
                             .padding()
                             .foregroundColor(Color("DarkPurple"))
                             .frame(maxWidth: .infinity)

@@ -18,6 +18,10 @@ struct PlantCareActionSetNeedsOnBoard: Action {
     var needsOnBoarding: Bool
 }
 
+struct PlantCareActionSetSelectedView: Action {
+    var selectedView: AvailableViews
+}
+
 func PlantCareThunkSetUserData(_ newName: String, _ newEmail: String) -> Thunk<AppState> {
     return Thunk<AppState> { dispatch, getState in
         // TODO: call API to update

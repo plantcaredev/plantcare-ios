@@ -24,11 +24,7 @@ struct ContentView: View {
             }
 
             if store.state.plantCare.loggedInStatus == .loggedIn && !store.state.plantCare.needsOnBoarding {
-                Text("Hello, \(store.state.plantCare.name)")
-                Text("Your email is: \(store.state.plantCare.email)")
-                Button(action: store.dispatch(PlantCareThunkLogout)) {
-                    Text("Logout")
-                }
+                MainContainer()
             }
         }
     }

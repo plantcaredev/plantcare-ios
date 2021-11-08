@@ -23,6 +23,9 @@ func plantCareReducer(action: Action, state: PlantCareState?) -> PlantCareState 
     case let action as PlantCareActionSetNeedsOnBoard:
         state.needsOnBoarding = action.needsOnBoarding
         break
+    case let action as PlantCareActionSetSelectedView:
+        state.selectedView = action.selectedView
+        break
     default:
         break
     }
