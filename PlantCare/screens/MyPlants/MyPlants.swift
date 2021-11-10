@@ -14,7 +14,8 @@ struct MyPlants: View {
     @State private var filterRoomSelection: String = "All"
 
     var body: some View {
-        let plants = store.state.plants.plants
+        let plants = selectPlants(store.state)
+
         let plantsFiltered = searchTerm.count > 0 ? plants.filter { $0.name.contains(searchTerm) }: plants
         let plantsToShow = filterRoomSelection != "All" ? plantsFiltered.filter { $0.location == filterRoomSelection }: plantsFiltered
         let roomsForFiltering = plants.map { $0.location }.uniqued()

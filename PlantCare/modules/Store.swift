@@ -10,7 +10,7 @@ import ReSwift
 import ReSwiftThunk
 import Auth0
 
-struct AppState {
+struct AppState: Hashable {
     var plantCare: PlantCareState = PlantCareState()
     var plants: PlantsState = PlantsState()
 }

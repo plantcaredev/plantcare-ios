@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Plant: Identifiable {
+struct Plant: Identifiable, Hashable {
     let id: UUID = UUID()
     var name: String
     var location: String
@@ -25,6 +25,6 @@ let mock_plants: [Plant] = [
     Plant(name: "Plant 8", location: "Dining Room", image: "")
 ]
 
-struct PlantsState {
+struct PlantsState: Hashable {
     var plants: [Plant] = mock_plants
 }

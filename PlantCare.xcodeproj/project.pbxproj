@@ -32,6 +32,9 @@
 		8154E48C273C35340070B0E9 /* Plants.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48B273C35340070B0E9 /* Plants.reducer.swift */; };
 		8154E48E273C35450070B0E9 /* Plants.state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48D273C35450070B0E9 /* Plants.state.swift */; };
 		8154E490273C35560070B0E9 /* Plants.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48F273C35560070B0E9 /* Plants.actions.swift */; };
+		8154E492273C369A0070B0E9 /* ReSwift-select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E491273C369A0070B0E9 /* ReSwift-select.swift */; };
+		8154E494273C37500070B0E9 /* Plants.selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E493273C37500070B0E9 /* Plants.selectors.swift */; };
+		8154E496273C38410070B0E9 /* PlantCare.selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E495273C38410070B0E9 /* PlantCare.selectors.swift */; };
 		8159F6332734742200537276 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6322734742200537276 /* env.swift */; };
 		8159F6372734780E00537276 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F6362734780E00537276 /* Auth0.plist */; };
 		8159F6392734784100537276 /* env_template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6382734784100537276 /* env_template.swift */; };
@@ -80,6 +83,9 @@
 		8154E48B273C35340070B0E9 /* Plants.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.reducer.swift; sourceTree = "<group>"; };
 		8154E48D273C35450070B0E9 /* Plants.state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.state.swift; sourceTree = "<group>"; };
 		8154E48F273C35560070B0E9 /* Plants.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.actions.swift; sourceTree = "<group>"; };
+		8154E491273C369A0070B0E9 /* ReSwift-select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReSwift-select.swift"; sourceTree = "<group>"; };
+		8154E493273C37500070B0E9 /* Plants.selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.selectors.swift; sourceTree = "<group>"; };
+		8154E495273C38410070B0E9 /* PlantCare.selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCare.selectors.swift; sourceTree = "<group>"; };
 		8159F6322734742200537276 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		8159F6362734780E00537276 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		8159F6382734784100537276 /* env_template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env_template.swift; sourceTree = "<group>"; };
@@ -286,6 +292,7 @@
 				8154E48B273C35340070B0E9 /* Plants.reducer.swift */,
 				8154E48D273C35450070B0E9 /* Plants.state.swift */,
 				8154E48F273C35560070B0E9 /* Plants.actions.swift */,
+				8154E493273C37500070B0E9 /* Plants.selectors.swift */,
 			);
 			path = Plants;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 				8159F63F27347B2800537276 /* PlantCare.reducer.swift */,
 				8159F64327347BF000537276 /* PlantCare.state.swift */,
 				8159F64527347C2700537276 /* PlantCare.actions.swift */,
+				8154E495273C38410070B0E9 /* PlantCare.selectors.swift */,
 			);
 			path = PlantCare;
 			sourceTree = "<group>";
@@ -314,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				8159F64827347E4000537276 /* ObservableState.swift */,
+				8154E491273C369A0070B0E9 /* ReSwift-select.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -508,6 +517,7 @@
 				8154E45C2739CFDA0070B0E9 /* SearchField.swift in Sources */,
 				8159F6392734784100537276 /* env_template.swift in Sources */,
 				8154E44E2739A86E0070B0E9 /* MainContainer.swift in Sources */,
+				8154E496273C38410070B0E9 /* PlantCare.selectors.swift in Sources */,
 				8154E441273983740070B0E9 /* LoadingScreen.swift in Sources */,
 				812592732730320F00BCBD7E /* ContentView.swift in Sources */,
 				8154E48E273C35450070B0E9 /* Plants.state.swift in Sources */,
@@ -516,6 +526,7 @@
 				8154E461273AEA910070B0E9 /* ViewExtensions.swift in Sources */,
 				8154E45F273AEA570070B0E9 /* ArrayExtensions.swift in Sources */,
 				8159F64227347B9E00537276 /* Store.swift in Sources */,
+				8154E492273C369A0070B0E9 /* ReSwift-select.swift in Sources */,
 				8159F64027347B2800537276 /* PlantCare.reducer.swift in Sources */,
 				8154E444273984AE0070B0E9 /* LoginScreen.swift in Sources */,
 				8154E4532739C4F50070B0E9 /* Home.swift in Sources */,
@@ -524,6 +535,7 @@
 				8154E4592739C58D0070B0E9 /* Settings.swift in Sources */,
 				8154E4512739A9930070B0E9 /* BottomBarSection.swift in Sources */,
 				8159F6332734742200537276 /* env.swift in Sources */,
+				8154E494273C37500070B0E9 /* Plants.selectors.swift in Sources */,
 				812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */,
 				8159F64927347E4000537276 /* ObservableState.swift in Sources */,
 				8154E464273AFF370070B0E9 /* PlantDetails.swift in Sources */,

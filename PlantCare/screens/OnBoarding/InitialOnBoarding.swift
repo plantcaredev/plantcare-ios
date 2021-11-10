@@ -9,8 +9,6 @@ import SwiftUI
 import ReSwift
 
 struct InitialOnBoarding: View {
-    @ObservedObject private var store = ObservableStore(store: plantCareStore)
-
     var fullName: String
     var email: String
 

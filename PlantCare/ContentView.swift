@@ -11,19 +11,23 @@ struct ContentView: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
 
     var body: some View {
+        let loggedInStatus = selectLoggedInStatus(store.state)
+        let shouldShowOnBoarding = selectShouldShowOnBoarding(store.state)
+        let shouldOpenMainScreen = selectShouldOpenMainScreen(store.state)
+
         VStack {
-            if store.state.plantCare.loggedInStatus == .unknown {
+            if loggedInStatus == .unknown {
                 LoadingScreen()
             }
-            if store.state.plantCare.loggedInStatus == .loggedOut {
+            if loggedInStatus == .loggedOut {
                 LoginScreen()
             }
 
-            if store.state.plantCare.loggedInStatus == .loggedIn && store.state.plantCare.needsOnBoarding {
+            if shouldShowOnBoarding {
                 InitialOnBoarding(fullName: store.state.plantCare.name, email: store.state.plantCare.email)
             }
 
-            if store.state.plantCare.loggedInStatus == .loggedIn && !store.state.plantCare.needsOnBoarding {
+            if shouldOpenMainScreen {
                 MainContainer()
             }
         }

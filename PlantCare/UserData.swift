@@ -9,7 +9,7 @@ import Foundation
 import Auth0
 
 
-class UserData: ObservableObject {
+class UserDataDank: ObservableObject {
     @Published var userName: String = ""
     @Published var userEmail: String = ""
     let credentialsManager = CredentialsManager(authentication: Auth0.authentication())

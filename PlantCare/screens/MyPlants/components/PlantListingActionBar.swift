@@ -12,7 +12,6 @@ struct PlantListingActionBar: View {
     @Binding var filterItemSelection: String
     var availableFilterItems: [String]
 
-
     var body: some View {
         HStack {
             SearchField(text: $searchTerm)

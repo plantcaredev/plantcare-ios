@@ -20,7 +20,7 @@ enum LoggedInStatus {
     case unknown
 }
 
-struct PlantCareState {
+struct PlantCareState: Hashable {
     var name: String = ""
     var email: String = ""
     var loggedInStatus: LoggedInStatus = .unknown

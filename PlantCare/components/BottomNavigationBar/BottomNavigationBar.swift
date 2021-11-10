@@ -13,7 +13,7 @@ struct BottomNavigationBar: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
 
     var body: some View {
-        let selectedView = store.state.plantCare.selectedView
+        let selectedView = selectSelectedView(store.state)
         VStack(alignment: .center) {
             HStack {
                 Spacer()
