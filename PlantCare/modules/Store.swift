@@ -12,11 +12,13 @@ import Auth0
 
 struct AppState {
     var plantCare: PlantCareState = PlantCareState()
+    var plants: PlantsState = PlantsState()
 }
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
-        plantCare: plantCareReducer(action: action, state: state?.plantCare)
+        plantCare: plantCareReducer(action: action, state: state?.plantCare),
+        plants: plantsReducer(action: action, state: state?.plants)
     )
 }
 

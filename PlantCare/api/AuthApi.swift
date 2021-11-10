@@ -88,7 +88,7 @@ class AuthApiClass: ObservableObject {
     
     func registerUser(name: String, email: String, sub: String, dispatch: @escaping DispatchFunction) {
         print("calling backend API with: \(name), \(email), \(sub)")
-        let needsOnBoarding = false // TODO: from backend API
+        let needsOnBoarding = true // TODO: from backend API
         
         DispatchQueue.main.async {
             dispatch(PlantCareActionSetUserData(newName: name, newEmail: email))

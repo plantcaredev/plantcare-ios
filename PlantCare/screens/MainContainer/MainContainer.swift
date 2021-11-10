@@ -13,16 +13,15 @@ struct MainContainer: View {
     var body: some View {
         let selectedView = store.state.plantCare.selectedView
         VStack {
-            ScrollView {
-                if selectedView == .home {
-                    Home()
-                }
-                if selectedView == .plants {
-                    MyPlants()
-                }
-                if selectedView == .settings {
-                    Settings()
-                }
+
+            if selectedView == .home {
+                Home()
+            }
+            if selectedView == .plants {
+                MyPlants()
+            }
+            if selectedView == .settings {
+                Settings()
             }
             Spacer()
             BottomNavigationBar()

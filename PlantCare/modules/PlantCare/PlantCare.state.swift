@@ -19,6 +19,7 @@ enum LoggedInStatus {
     case loggedOut
     case unknown
 }
+
 struct PlantCareState {
     var name: String = ""
     var email: String = ""
