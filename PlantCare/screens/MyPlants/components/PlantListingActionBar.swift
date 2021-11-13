@@ -42,14 +42,15 @@ struct PlantListingActionBar: View {
             } label: {
                 Image(systemName: "slider.horizontal.3")
                     .foregroundColor(filterItemSelection != "All" ? Color.blue : Color.gray)
+                    .frame(width: 45, height: 36)
             }
         }
             .padding([.trailing, .leading])
     }
 }
 
-//struct PlantListingActionBar_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PlantListingActionBar()
-//    }
-//}
+struct PlantListingActionBar_Previews: PreviewProvider {
+    static var previews: some View {
+        PlantListingActionBar(searchTerm: .constant(""), filterItemSelection: .constant(""), availableFilterItems: ["Room1", "Room2"])
+    }
+}

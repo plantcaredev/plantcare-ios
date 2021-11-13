@@ -18,6 +18,10 @@ struct PlantCareActionSetNeedsOnBoard: Action {
     var needsOnBoarding: Bool
 }
 
+struct PlantCareActionUpdateHideNavigation: Action {
+    var hideNavigation: Bool
+}
+
 struct PlantCareActionSetSelectedView: Action {
     var selectedView: AvailableViews
 }

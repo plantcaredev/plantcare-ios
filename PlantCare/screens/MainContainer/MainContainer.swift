@@ -12,6 +12,7 @@ struct MainContainer: View {
 
     var body: some View {
         let selectedView = selectSelectedView(store.state)
+        let showBottomNavigation = selectShowNavigationBar(store.state)
         VStack {
 
             if selectedView == .home {
@@ -23,10 +24,13 @@ struct MainContainer: View {
             if selectedView == .settings {
                 Settings()
             }
-            Spacer()
-            BottomNavigationBar()
+            if showBottomNavigation {
+                Spacer()
+                BottomNavigationBar()
+            }
         }
             .edgesIgnoringSafeArea([.bottom])
+
     }
 }
 

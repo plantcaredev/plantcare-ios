@@ -26,4 +26,5 @@ struct PlantCareState: Hashable {
     var loggedInStatus: LoggedInStatus = .unknown
     var needsOnBoarding: Bool = false
     var selectedView: AvailableViews = .home
+    var hideNavigation: Bool = false
 }

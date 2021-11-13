@@ -19,6 +19,8 @@ let selectLoggedInStatus = createSelector(selector1: selectPlantCareState, { sta
 
 let selectNeedsOnBoarding = createSelector(selector1: selectPlantCareState, { state in state.needsOnBoarding })
 
+let selectShowNavigationBar = createSelector(selector1: selectPlantCareState, { state in !state.hideNavigation })
+
 let selectShouldShowOnBoarding = createSelector(selector1: selectLoggedInStatus, selector2: selectNeedsOnBoarding, { loggedInStatus, needsOnBoarding in
     return loggedInStatus == .loggedIn && needsOnBoarding
 })

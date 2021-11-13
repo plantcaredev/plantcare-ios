@@ -26,6 +26,9 @@ func plantCareReducer(action: Action, state: PlantCareState?) -> PlantCareState 
     case let action as PlantCareActionSetSelectedView:
         state.selectedView = action.selectedView
         break
+    case let action as PlantCareActionUpdateHideNavigation:
+        state.hideNavigation = action.hideNavigation
+        break
     default:
         break
     }

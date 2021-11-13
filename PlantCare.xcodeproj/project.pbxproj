@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811819B7273EE11000F0994B /* PlantDetailsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811819B6273EE11000F0994B /* PlantDetailsImage.swift */; };
+		811819B9273EE44300F0994B /* PlantDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811819B8273EE44300F0994B /* PlantDetailsHeader.swift */; };
+		811819BC273F089C00F0994B /* ImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 811819BB273F089C00F0994B /* ImageViewer */; };
+		811819BE273F089C00F0994B /* ImageViewerRemote in Frameworks */ = {isa = PBXBuildFile; productRef = 811819BD273F089C00F0994B /* ImageViewerRemote */; };
+		811819C0273F13EA00F0994B /* DetailsViewDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811819BF273F13EA00F0994B /* DetailsViewDismissButton.swift */; };
+		811819C2273F4F0400F0994B /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811819C1273F4F0400F0994B /* PlantDetails.swift */; };
 		812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592702730320F00BCBD7E /* PlantCareApp.swift */; };
 		812592732730320F00BCBD7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812592722730320F00BCBD7E /* ContentView.swift */; };
 		812592752730321000BCBD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812592742730321000BCBD7E /* Assets.xcassets */; };
@@ -26,7 +32,6 @@
 		8154E45C2739CFDA0070B0E9 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E45B2739CFDA0070B0E9 /* SearchField.swift */; };
 		8154E45F273AEA570070B0E9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E45E273AEA570070B0E9 /* ArrayExtensions.swift */; };
 		8154E461273AEA910070B0E9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E460273AEA910070B0E9 /* ViewExtensions.swift */; };
-		8154E464273AFF370070B0E9 /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E463273AFF370070B0E9 /* PlantDetails.swift */; };
 		8154E466273AFF450070B0E9 /* PlantListingActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */; };
 		8154E468273B00440070B0E9 /* PlantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E467273B00440070B0E9 /* PlantList.swift */; };
 		8154E48C273C35340070B0E9 /* Plants.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48B273C35340070B0E9 /* Plants.reducer.swift */; };
@@ -35,6 +40,7 @@
 		8154E492273C369A0070B0E9 /* ReSwift-select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E491273C369A0070B0E9 /* ReSwift-select.swift */; };
 		8154E494273C37500070B0E9 /* Plants.selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E493273C37500070B0E9 /* Plants.selectors.swift */; };
 		8154E496273C38410070B0E9 /* PlantCare.selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E495273C38410070B0E9 /* PlantCare.selectors.swift */; };
+		8154E498273C751C0070B0E9 /* FullScreenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E497273C751C0070B0E9 /* FullScreenImage.swift */; };
 		8159F6332734742200537276 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6322734742200537276 /* env.swift */; };
 		8159F6372734780E00537276 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8159F6362734780E00537276 /* Auth0.plist */; };
 		8159F6392734784100537276 /* env_template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159F6382734784100537276 /* env_template.swift */; };
@@ -56,6 +62,10 @@
 /* Begin PBXFileReference section */
 		4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF52CD9BE2AC2A65C63DC79 /* Pods-PlantCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantCare.release.xcconfig"; path = "Target Support Files/Pods-PlantCare/Pods-PlantCare.release.xcconfig"; sourceTree = "<group>"; };
+		811819B6273EE11000F0994B /* PlantDetailsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsImage.swift; sourceTree = "<group>"; };
+		811819B8273EE44300F0994B /* PlantDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsHeader.swift; sourceTree = "<group>"; };
+		811819BF273F13EA00F0994B /* DetailsViewDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewDismissButton.swift; sourceTree = "<group>"; };
+		811819C1273F4F0400F0994B /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
 		8125926D2730320F00BCBD7E /* PlantCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812592702730320F00BCBD7E /* PlantCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCareApp.swift; sourceTree = "<group>"; };
 		812592722730320F00BCBD7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,7 +87,6 @@
 		8154E45B2739CFDA0070B0E9 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		8154E45E273AEA570070B0E9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		8154E460273AEA910070B0E9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		8154E463273AFF370070B0E9 /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
 		8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListingActionBar.swift; sourceTree = "<group>"; };
 		8154E467273B00440070B0E9 /* PlantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantList.swift; sourceTree = "<group>"; };
 		8154E48B273C35340070B0E9 /* Plants.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.reducer.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 		8154E491273C369A0070B0E9 /* ReSwift-select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReSwift-select.swift"; sourceTree = "<group>"; };
 		8154E493273C37500070B0E9 /* Plants.selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.selectors.swift; sourceTree = "<group>"; };
 		8154E495273C38410070B0E9 /* PlantCare.selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCare.selectors.swift; sourceTree = "<group>"; };
+		8154E497273C751C0070B0E9 /* FullScreenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImage.swift; sourceTree = "<group>"; };
 		8159F6322734742200537276 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		8159F6362734780E00537276 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		8159F6382734784100537276 /* env_template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env_template.swift; sourceTree = "<group>"; };
@@ -109,7 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811819BC273F089C00F0994B /* ImageViewer in Frameworks */,
 				8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */,
+				811819BE273F089C00F0994B /* ImageViewerRemote in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +135,17 @@
 				4FF52CD9BE2AC2A65C63DC79 /* Pods-PlantCare.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		811819B5273EE0FB00F0994B /* PlantDetails */ = {
+			isa = PBXGroup;
+			children = (
+				811819B6273EE11000F0994B /* PlantDetailsImage.swift */,
+				811819B8273EE44300F0994B /* PlantDetailsHeader.swift */,
+				811819BF273F13EA00F0994B /* DetailsViewDismissButton.swift */,
+				811819C1273F4F0400F0994B /* PlantDetails.swift */,
+			);
+			path = PlantDetails;
 			sourceTree = "<group>";
 		};
 		812592642730320F00BCBD7E = {
@@ -279,9 +302,10 @@
 		8154E462273AFF1F0070B0E9 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				8154E463273AFF370070B0E9 /* PlantDetails.swift */,
+				811819B5273EE0FB00F0994B /* PlantDetails */,
 				8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */,
 				8154E467273B00440070B0E9 /* PlantList.swift */,
+				8154E497273C751C0070B0E9 /* FullScreenImage.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -404,6 +428,10 @@
 			dependencies = (
 			);
 			name = PlantCare;
+			packageProductDependencies = (
+				811819BB273F089C00F0994B /* ImageViewer */,
+				811819BD273F089C00F0994B /* ImageViewerRemote */,
+			);
 			productName = PlantCare;
 			productReference = 8125926D2730320F00BCBD7E /* PlantCare.app */;
 			productType = "com.apple.product-type.application";
@@ -432,6 +460,9 @@
 				Base,
 			);
 			mainGroup = 812592642730320F00BCBD7E;
+			packageReferences = (
+				811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+			);
 			productRefGroup = 8125926E2730320F00BCBD7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -506,11 +537,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8154E466273AFF450070B0E9 /* PlantListingActionBar.swift in Sources */,
+				8154E498273C751C0070B0E9 /* FullScreenImage.swift in Sources */,
+				811819C0273F13EA00F0994B /* DetailsViewDismissButton.swift in Sources */,
 				8154E468273B00440070B0E9 /* PlantList.swift in Sources */,
 				8154E4572739C5770070B0E9 /* MyPlants.swift in Sources */,
 				8159F64C27347F8A00537276 /* AuthApi.swift in Sources */,
 				8154E44C27399D4B0070B0E9 /* BottomNavigationBar.swift in Sources */,
 				8154E43E273980950070B0E9 /* OnboardingWelcome.swift in Sources */,
+				811819C2273F4F0400F0994B /* PlantDetails.swift in Sources */,
 				8125929A2730341900BCBD7E /* AppDelegate.swift in Sources */,
 				8159F64427347BF000537276 /* PlantCare.state.swift in Sources */,
 				8154E48C273C35340070B0E9 /* Plants.reducer.swift in Sources */,
@@ -520,6 +554,7 @@
 				8154E496273C38410070B0E9 /* PlantCare.selectors.swift in Sources */,
 				8154E441273983740070B0E9 /* LoadingScreen.swift in Sources */,
 				812592732730320F00BCBD7E /* ContentView.swift in Sources */,
+				811819B7273EE11000F0994B /* PlantDetailsImage.swift in Sources */,
 				8154E48E273C35450070B0E9 /* Plants.state.swift in Sources */,
 				8154E43C27397F800070B0E9 /* OnboardingInfoConfirmation.swift in Sources */,
 				8159F64F273580CC00537276 /* InitialOnBoarding.swift in Sources */,
@@ -536,9 +571,9 @@
 				8154E4512739A9930070B0E9 /* BottomBarSection.swift in Sources */,
 				8159F6332734742200537276 /* env.swift in Sources */,
 				8154E494273C37500070B0E9 /* Plants.selectors.swift in Sources */,
+				811819B9273EE44300F0994B /* PlantDetailsHeader.swift in Sources */,
 				812592712730320F00BCBD7E /* PlantCareApp.swift in Sources */,
 				8159F64927347E4000537276 /* ObservableState.swift in Sources */,
-				8154E464273AFF370070B0E9 /* PlantDetails.swift in Sources */,
 				8154E490273C35560070B0E9 /* Plants.actions.swift in Sources */,
 				8159F65527358E9200537276 /* LabelTextField.swift in Sources */,
 			);
@@ -749,6 +784,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jake-Short/swiftui-image-viewer.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		811819BB273F089C00F0994B /* ImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewer;
+		};
+		811819BD273F089C00F0994B /* ImageViewerRemote */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewerRemote;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 812592652730320F00BCBD7E /* Project object */;
 }
