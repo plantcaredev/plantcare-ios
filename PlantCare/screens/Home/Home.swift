@@ -16,7 +16,9 @@ struct Home: View {
         VStack {
             Text("Hello, \(name)")
             Text("Your email is: \(email)")
-            Button(action: store.dispatch(PlantCareThunkLogout)) {
+            Button {
+                store.dispatch(PlantCareThunkLogout)
+            } label: {
                 Text("Logout")
             }
         }

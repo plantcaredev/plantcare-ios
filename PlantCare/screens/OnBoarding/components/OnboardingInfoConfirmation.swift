@@ -35,8 +35,8 @@ struct OnboardingInfoConfirmation: View {
                 }
                 VStack {
                     Button {
-                        (store.dispatch as (_ action: Action) -> Void)(PlantCareActionSetUserData(newName: name, newEmail: email))
-                        (store.dispatch as (_ action: Action) -> Void)(PlantCareActionSetNeedsOnBoard(needsOnBoarding: false))
+                        store.dispatch(PlantCareActionSetUserData(newName: name, newEmail: email))
+                        store.dispatch(PlantCareActionSetNeedsOnBoard(needsOnBoarding: false))
                     } label: {
 
                         Text("Confirm")
@@ -47,7 +47,9 @@ struct OnboardingInfoConfirmation: View {
                             .cornerRadius(4)
                     }
 
-                    Button(action: store.dispatch(PlantCareThunkLogout)) {
+                    Button {
+                        store.dispatch(PlantCareThunkLogout)
+                    } label: {
                         Text("Logout")
                             .foregroundColor(.white)
                             .padding()

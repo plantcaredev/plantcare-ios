@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import ReSwift
 
 struct PlantList: View {
+    @ObservedObject private var store = ObservableStore(store: plantCareStore)
     var plants: [PlantUI]
-
+    
     var body: some View {
-        ScrollView {
+        ScrollRefreshable(title: "Pull to Refresh") {
             LazyVStack {
                 ForEach(plants) { plant in
-                    NavigationLink(destination: PlantDetails(plant: plant)) {
+                    ZStack{
                         HStack {
                             VStack(alignment: .leading) {
                                 Text(plant.name)
@@ -44,19 +46,28 @@ struct PlantList: View {
                                         .frame(width: 75, height: 75)
                                 }
                             }
-                                .cornerRadius(15)
+                            .cornerRadius(15)
                         }
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.white
-                                .cornerRadius(15)
-                                .shadow(color: .gray.opacity(0.25), radius: 4, x: 0, y: 0)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white
+                                        .cornerRadius(15)
+                                        .shadow(color: .gray.opacity(0.25), radius: 4, x: 0, y: 0)
                         )
+                        
+                        NavigationLink(destination: PlantDetails(plant: plant)) {
+                            EmptyView()
+                        }.frame(width: 0)
+                            .opacity(0)
                     }
                 }
             }
             .padding()
-
+        } onRefresh: {
+            store.dispatch(PlantActionFetchPlantsRequested)
+            let _ = await store.waitTill(stateIs: { state in
+                return !state.plants.fetchingPlants
+            })
         }
     }
 }

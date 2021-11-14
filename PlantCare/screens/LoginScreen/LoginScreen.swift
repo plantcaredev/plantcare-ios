@@ -29,7 +29,9 @@ struct LoginScreen: View {
                         .background(.white)
                         .padding([.leading, .trailing, .top])
 
-                    Button(action: store.dispatch(PlantCareThunkLogin)) {
+                    Button {
+                        store.dispatch(PlantCareThunkLogin)
+                    } label: {
                         Text("Login/Register")
                             .font(.custom("Mulish-Regular", size: 16))
                             .padding()

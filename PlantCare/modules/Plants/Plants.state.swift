@@ -27,4 +27,5 @@ let mock_plants: [Plant] = [
 
 struct PlantsState: Hashable {
     var plants: [Plant] = mock_plants
+    var fetchingPlants: Bool = false
 }

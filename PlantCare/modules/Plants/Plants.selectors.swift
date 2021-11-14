@@ -15,10 +15,18 @@ struct PlantUI: Identifiable, Hashable {
     var location: String
     var image: String
     var hasImage: Bool
+    
+    init(plant: Plant) {
+        self.id = plant.id
+        self.name = plant.name
+        self.location = plant.location
+        self.image = plant.image
+        self.hasImage = plant.image.count > 0
+    }
 }
 let selectPlants = createSelector(selector1: selectPlantState, {plantState -> [PlantUI] in
     return plantState.plants.map { plant in
-        return PlantUI(id: plant.id, name: plant.name, location: plant.location, image: plant.image, hasImage: plant.image.count > 0)
+        return PlantUI(plant: plant)
     }
     
 })
