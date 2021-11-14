@@ -5,14 +5,14 @@
 //  Created by Eric Alas on 2021-11-04.
 //
 
+import Auth0
 import Foundation
 import ReSwift
 import ReSwiftThunk
-import Auth0
 
 struct AppState: Hashable {
-    var plantCare: PlantCareState = PlantCareState()
-    var plants: PlantsState = PlantsState()
+    var plantCare = PlantCareState()
+    var plants = PlantsState()
 }
 
 func appReducer(action: Action, state: AppState?) -> AppState {
@@ -24,4 +24,4 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 
 let AuthApi = AuthApiClass()
 let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
-let plantCareStore: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil, middleware: [thunkMiddleware])
+let plantCareStore = Store<AppState>(reducer: appReducer, state: nil, middleware: [thunkMiddleware])

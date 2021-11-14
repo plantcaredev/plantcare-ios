@@ -26,8 +26,8 @@ struct BottomBarSection: View {
     }
 }
 
-//struct BottomBarSection_Previews: PreviewProvider {
+// struct BottomBarSection_Previews: PreviewProvider {
 //    static var previews: some View {
 //        BottomBarSection()
 //    }
-//}
+// }

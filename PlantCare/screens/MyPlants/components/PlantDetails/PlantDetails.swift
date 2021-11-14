@@ -5,8 +5,8 @@
 //  Created by Eric Alas on 2021-11-12.
 //
 
-import SwiftUI
 import ImageViewerRemote
+import SwiftUI
 
 struct PlantDetails: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
@@ -40,7 +40,7 @@ struct PlantDetails: View {
                                     })
                             
                             LazyVStack(spacing: 20) {
-                                ForEach(0..<10) { _ in
+                                ForEach(0 ..< 10) { _ in
                                     Rectangle()
                                         .fill(Color.gray.opacity(0.5))
                                         .frame(height: 100)
@@ -64,7 +64,6 @@ struct PlantDetails: View {
                                 }
                             )
                         }
-                        
                     }
                     .coordinateSpace(name: "ScrollView")
                     .onPreferenceChange(OffsetPreferenceKey.self) { value in
@@ -86,7 +85,6 @@ struct PlantDetails: View {
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
             }
-            
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
@@ -95,14 +93,15 @@ struct PlantDetails: View {
             store.dispatch(PlantCareActionUpdateHideNavigation(hideNavigation: newValue))
         }
         .gesture(DragGesture(minimumDistance: 1, coordinateSpace: .global)
-                    .onEnded { value in
-            let horizontalAmount = value.translation.width as CGFloat
-            let verticalAmount = value.translation.height as CGFloat
+            .onEnded { value in
+                let horizontalAmount = value.translation.width as CGFloat
+                let verticalAmount = value.translation.height as CGFloat
             
-            if abs(horizontalAmount) > abs(verticalAmount) && horizontalAmount > 0 {
-                dismissSelf()
+                if abs(horizontalAmount) > abs(verticalAmount), horizontalAmount > 0 {
+                    dismissSelf()
+                }
             }
-        })
+        )
     }
     
     func dismissSelf() {
@@ -111,11 +110,11 @@ struct PlantDetails: View {
     
     func getSafeAreaTop() -> CGFloat {
         let keyWindow = UIApplication.shared.connectedScenes
-            .filter({ $0.activationState == .foregroundActive })
-            .map({ $0 as? UIWindowScene })
-            .compactMap({ $0 })
+            .filter { $0.activationState == .foregroundActive }
+            .map { $0 as? UIWindowScene }
+            .compactMap { $0 }
             .first?.windows
-            .filter({ $0.isKeyWindow }).first
+            .filter { $0.isKeyWindow }.first
         
         return keyWindow?.safeAreaInsets.top ?? 10
     }
@@ -123,10 +122,6 @@ struct PlantDetails: View {
 
 struct PlantDetails_Previews: PreviewProvider {
     static var previews: some View {
-        PlantDetails(plant: selectPlantUI(index: 0))
+        PlantDetails(plant: PlantUI(plant: mock_plants[0]))
     }
-}
-
-fileprivate func selectPlantUI(index: Int) -> PlantUI {
-    return PlantUI(id: mock_plants[index].id, name: mock_plants[index].name, location: mock_plants[index].location, image: mock_plants[index].image, hasImage: mock_plants[index].image.count > 0)
 }

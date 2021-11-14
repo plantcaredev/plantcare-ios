@@ -24,12 +24,12 @@ struct LabelTextField: View {
                 .cornerRadius(4)
                 .font(.custom("Mulish-Regular", size: 18))
         }
-            .padding(.horizontal, 15)
+        .padding(.horizontal, 15)
     }
 }
 
-//struct LabelTextField_Previews: PreviewProvider {
+// struct LabelTextField_Previews: PreviewProvider {
 //    static var previews: some View {
 //        LabelTextField()
 //    }
-//}
+// }

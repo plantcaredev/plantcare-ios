@@ -13,7 +13,7 @@ struct PlantActionSetFetchingPlants: Action {
     var isFetching: Bool
 }
 
-let PlantActionFetchPlantsRequested = Thunk<AppState> { dispatch, getState in
+let PlantActionFetchPlantsRequested = Thunk<AppState> { dispatch, _ in
     Task(priority: .high) {
         dispatch(PlantActionSetFetchingPlants(isFetching: true))
         await Task.sleep(5_000_000_000) // mock call server

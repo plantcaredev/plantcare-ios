@@ -16,11 +16,11 @@ struct MyPlants: View {
     var body: some View {
         let plants = selectPlants(store.state)
 
-        let plantsFiltered = searchTerm.count > 0 ? plants.filter { $0.name.contains(searchTerm) }: plants
-        let plantsToShow = filterRoomSelection != "All" ? plantsFiltered.filter { $0.location == filterRoomSelection }: plantsFiltered
+        let plantsFiltered = searchTerm.count > 0 ? plants.filter { $0.name.contains(searchTerm) } : plants
+        let plantsToShow = filterRoomSelection != "All" ? plantsFiltered.filter { $0.location == filterRoomSelection } : plantsFiltered
         let roomsForFiltering = plants.map { $0.location }.uniqued()
 
-        NavigationView() {
+        NavigationView {
             VStack {
                 Text("My Plants")
                     .foregroundColor(Color("DarkPurple"))
@@ -30,7 +30,7 @@ struct MyPlants: View {
                 PlantListingActionBar(searchTerm: $searchTerm, filterItemSelection: $filterRoomSelection, availableFilterItems: roomsForFiltering)
                 PlantList(plants: plantsToShow)
             }
-                .navigationBarHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }

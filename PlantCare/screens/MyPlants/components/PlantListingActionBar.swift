@@ -37,7 +37,6 @@ struct PlantListingActionBar: View {
                             Text(location)
                         }
                     }
-
                 }
             } label: {
                 Image(systemName: "slider.horizontal.3")
@@ -45,7 +44,7 @@ struct PlantListingActionBar: View {
                     .frame(width: 45, height: 36)
             }
         }
-            .padding([.trailing, .leading])
+        .padding([.trailing, .leading])
     }
 }
 

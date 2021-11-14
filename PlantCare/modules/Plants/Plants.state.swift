@@ -8,7 +8,7 @@
 import Foundation
 
 struct Plant: Identifiable, Hashable {
-    let id: UUID = UUID()
+    let id = UUID()
     var name: String
     var location: String
     var image: String

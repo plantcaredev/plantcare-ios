@@ -27,7 +27,7 @@ struct PlantCareActionSetSelectedView: Action {
 }
 
 func PlantCareThunkSetUserData(_ newName: String, _ newEmail: String) -> Thunk<AppState> {
-    return Thunk<AppState> { dispatch, getState in
+    return Thunk<AppState> { dispatch, _ in
         // TODO: call API to update
         dispatch(PlantCareActionSetUserData(newName: newName, newEmail: newEmail))
     }
@@ -38,7 +38,7 @@ struct PlantCareActionSetLoggedInStatus: Action {
     var needsOnBoarding: Bool
 }
 
-let PlantCareThunkLaunch = Thunk<AppState> { dispatch, getState in
+let PlantCareThunkLaunch = Thunk<AppState> { dispatch, _ in
     if AuthApi.isLoggedIn() {
         AuthApi.postLogin(dispatch: dispatch)
     } else {
@@ -46,10 +46,10 @@ let PlantCareThunkLaunch = Thunk<AppState> { dispatch, getState in
     }
 }
 
-let PlantCareThunkLogout = Thunk<AppState> { dispatch, getState in
+let PlantCareThunkLogout = Thunk<AppState> { dispatch, _ in
     AuthApi.logout(dispatch: dispatch)
 }
 
-let PlantCareThunkLogin = Thunk<AppState> { dispatch, getState in
+let PlantCareThunkLogin = Thunk<AppState> { dispatch, _ in
     AuthApi.login(dispatch: dispatch)
 }

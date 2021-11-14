@@ -5,18 +5,18 @@
 //  Created by Eric Alas on 2021-11-09.
 //
 
-import SwiftUI
 import ReSwift
+import SwiftUI
 
 struct PlantList: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
     var plants: [PlantUI]
-    
+
     var body: some View {
         ScrollRefreshable(title: "Pull to Refresh") {
             LazyVStack {
                 ForEach(plants) { plant in
-                    ZStack{
+                    ZStack {
                         HStack {
                             VStack(alignment: .leading) {
                                 Text(plant.name)
@@ -51,10 +51,10 @@ struct PlantList: View {
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.white
-                                        .cornerRadius(15)
-                                        .shadow(color: .gray.opacity(0.25), radius: 4, x: 0, y: 0)
+                            .cornerRadius(15)
+                            .shadow(color: .gray.opacity(0.25), radius: 4, x: 0, y: 0)
                         )
-                        
+
                         NavigationLink(destination: PlantDetails(plant: plant)) {
                             EmptyView()
                         }.frame(width: 0)
@@ -65,8 +65,8 @@ struct PlantList: View {
             .padding()
         } onRefresh: {
             store.dispatch(PlantActionFetchPlantsRequested)
-            let _ = await store.waitTill(stateIs: { state in
-                return !state.plants.fetchingPlants
+            _ = await store.waitTill(stateIs: { state in
+                !state.plants.fetchingPlants
             })
         }
     }
@@ -75,7 +75,7 @@ struct PlantList: View {
 struct PlantList_Previews: PreviewProvider {
     static var previews: some View {
         PlantList(plants: mock_plants.map { plant in
-            return PlantUI(id: plant.id, name: plant.name, location: plant.location, image: plant.image, hasImage: plant.image.count > 0)
+            PlantUI(plant: plant)
         })
     }
 }

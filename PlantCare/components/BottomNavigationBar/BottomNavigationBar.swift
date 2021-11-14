@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct BottomNavigationBar: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
 
@@ -29,7 +27,7 @@ struct BottomNavigationBar: View {
                 } label: {
                     BottomBarSection(icon: "leaf", text: "My plants", isSelected: selectedView == .plants)
                 }
-                
+
                 Spacer()
                 Spacer()
                 Button {
@@ -40,11 +38,11 @@ struct BottomNavigationBar: View {
                 Spacer()
             }
         }
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(Color.white
-                .cornerRadius(30, corners: [.topLeft, .topRight])
-                .shadow(color: .gray.opacity(0.5), radius: 1, x: 0, y: -1)
+        .frame(maxWidth: .infinity)
+        .padding()
+        .background(Color.white
+            .cornerRadius(30, corners: [.topLeft, .topRight])
+            .shadow(color: .gray.opacity(0.5), radius: 1, x: 0, y: -1)
         )
     }
 }

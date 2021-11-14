@@ -13,6 +13,7 @@ public class ObservableStore<T>: ObservableObject {
     private var store: Store<T>
     
     // MARK: Lifecycle
+
     public init(store: Store<T>) {
         self.store = store
         self.state = store.state
@@ -25,6 +26,7 @@ public class ObservableStore<T>: ObservableObject {
     }
     
     // MARK: Public methods
+
     public func dispatch(_ action: Action) {
         store.dispatch(action)
     }
@@ -48,7 +50,6 @@ public class ObservableStore<T>: ObservableObject {
                     continuation.resume(returning: true)
                 }
                 
-                
                 if runCount == atMost {
                     timer.invalidate()
                     continuation.resume(returning: false)
@@ -60,10 +61,10 @@ public class ObservableStore<T>: ObservableObject {
 
 extension ObservableStore: StoreSubscriber {
     // MARK: - <StoreSubscriber>
+
     public func newState(state: T) {
         DispatchQueue.main.async {
             self.state = state
         }
     }
 }
-

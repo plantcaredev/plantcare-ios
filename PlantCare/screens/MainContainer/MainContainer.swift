@@ -14,7 +14,6 @@ struct MainContainer: View {
         let selectedView = selectSelectedView(store.state)
         let showBottomNavigation = selectShowNavigationBar(store.state)
         VStack {
-
             if selectedView == .home {
                 Home()
             }
@@ -29,8 +28,7 @@ struct MainContainer: View {
                 BottomNavigationBar()
             }
         }
-            .edgesIgnoringSafeArea([.bottom])
-
+        .edgesIgnoringSafeArea([.bottom])
     }
 }
 

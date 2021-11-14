@@ -7,7 +7,7 @@
 
 import Foundation
 
-let selectPlantState = createSelector(selector1: {(state: AppState) in return state}, {state in return state.plants})
+let selectPlantState = createSelector(selector1: { (state: AppState) in state }, { state in state.plants })
 
 struct PlantUI: Identifiable, Hashable {
     let id: UUID
@@ -15,7 +15,7 @@ struct PlantUI: Identifiable, Hashable {
     var location: String
     var image: String
     var hasImage: Bool
-    
+
     init(plant: Plant) {
         self.id = plant.id
         self.name = plant.name
@@ -24,9 +24,9 @@ struct PlantUI: Identifiable, Hashable {
         self.hasImage = plant.image.count > 0
     }
 }
-let selectPlants = createSelector(selector1: selectPlantState, {plantState -> [PlantUI] in
-    return plantState.plants.map { plant in
-        return PlantUI(plant: plant)
+
+let selectPlants = createSelector(selector1: selectPlantState) { plantState -> [PlantUI] in
+    plantState.plants.map { plant in
+        PlantUI(plant: plant)
     }
-    
-})
+}

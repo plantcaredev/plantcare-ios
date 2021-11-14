@@ -41,15 +41,15 @@ struct PlantDetailsHeader: View {
                 }
             }
         }
-            .frame(height: frameHeight * 0.1)
-            .frame(width: frameWidth)
-            .padding([.top], safeAreaTop)
-            .background(.ultraThinMaterial)
+        .frame(height: frameHeight * 0.1)
+        .frame(width: frameWidth)
+        .padding([.top], safeAreaTop)
+        .background(.ultraThinMaterial)
     }
 }
 
-//struct PlantDetailsHeader_Previews: PreviewProvider {
+// struct PlantDetailsHeader_Previews: PreviewProvider {
 //    static var previews: some View {
 //        PlantDetailsHeader()
 //    }
-//}
+// }

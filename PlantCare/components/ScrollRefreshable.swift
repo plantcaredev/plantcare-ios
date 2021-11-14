@@ -36,7 +36,7 @@ struct ScrollRefreshable_Previews: PreviewProvider {
     static var previews: some View {
         ScrollRefreshable(title: "Pull to refresh") {
             LazyVStack {
-                ForEach(1...20, id: \.self) { i in
+                ForEach(1 ... 20, id: \.self) { _ in
                     Text("hello")
                         .frame(height: 200)
                 }
@@ -44,6 +44,5 @@ struct ScrollRefreshable_Previews: PreviewProvider {
         } onRefresh: {
             await Task.sleep(1_000_000_000)
         }
-
     }
 }

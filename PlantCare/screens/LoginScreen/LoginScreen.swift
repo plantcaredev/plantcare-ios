@@ -42,24 +42,24 @@ struct LoginScreen: View {
                             .padding()
                     }
                 }
-                    .scaleEffect(scale)
-                    .onAppear {
-                    withAnimation() {
+                .scaleEffect(scale)
+                .onAppear {
+                    withAnimation {
                         scale = 1
                     }
                 }
             }
             Spacer()
         }
-            .frame(
+        .frame(
             minWidth: 0,
             maxWidth: .infinity,
             minHeight: 0,
             maxHeight: .infinity,
             alignment: .topLeading
         )
-            .background(Color("DarkPurple"))
-            .onAppear(perform: delayAppearLoginButton)
+        .background(Color("DarkPurple"))
+        .onAppear(perform: delayAppearLoginButton)
     }
 
     private func delayAppearLoginButton() {

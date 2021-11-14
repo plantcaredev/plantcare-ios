@@ -5,8 +5,8 @@
 //  Created by Eric Alas on 2021-11-04.
 //
 
-import Foundation
 import Auth0
+import Foundation
 import ReSwift
 
 class AuthApiClass: ObservableObject {
@@ -29,15 +29,15 @@ class AuthApiClass: ObservableObject {
             .scope("openid profile read:current_user")
             .audience(AUTH0_AUDIENCE)
             .start { result in
-            switch result {
-            case .failure(let error):
-                print("Error loggin in: \(error)")
-            case .success(let credentials):
-                print("Credentials: \(credentials)")
-                _ = self.credentialsManager.store(credentials: credentials)
-                self.postLogin(dispatch: dispatch)
+                switch result {
+                case .failure(let error):
+                    print("Error loggin in: \(error)")
+                case .success(let credentials):
+                    print("Credentials: \(credentials)")
+                    _ = self.credentialsManager.store(credentials: credentials)
+                    self.postLogin(dispatch: dispatch)
+                }
             }
-        }
     }
 
     func postLogin(dispatch: @escaping DispatchFunction) {
@@ -60,13 +60,13 @@ class AuthApiClass: ObservableObject {
                 .authentication()
                 .userInfo(withAccessToken: accessToken)
                 .start { result in
-                switch(result) {
-                case .success(let profile):
-                    self.retrieveUserData(accessToken: accessToken, sub: profile.sub, dispatch: dispatch)
-                case .failure(let error):
-                    print("Error getting user info: \(error)")
+                    switch result {
+                    case .success(let profile):
+                        self.retrieveUserData(accessToken: accessToken, sub: profile.sub, dispatch: dispatch)
+                    case .failure(let error):
+                        print("Error getting user info: \(error)")
+                    }
                 }
-            }
         }
     }
 
@@ -75,21 +75,21 @@ class AuthApiClass: ObservableObject {
             .users(token: accessToken)
             .get(sub, fields: [], include: true)
             .start { result in
-            switch result {
-            case .success(let user):
-                let name = user["name"] as? String
-                let email = user["email"] as? String
-                self.registerUser(name: name ?? "", email: email ?? "", sub: sub, dispatch: dispatch)
-            case .failure(let error):
-                print(error)
+                switch result {
+                case .success(let user):
+                    let name = user["name"] as? String
+                    let email = user["email"] as? String
+                    self.registerUser(name: name ?? "", email: email ?? "", sub: sub, dispatch: dispatch)
+                case .failure(let error):
+                    print(error)
+                }
             }
-        }
     }
-    
+
     func registerUser(name: String, email: String, sub: String, dispatch: @escaping DispatchFunction) {
         print("calling backend API with: \(name), \(email), \(sub)")
         let needsOnBoarding = false // TODO: from backend API
-        
+
         DispatchQueue.main.async {
             dispatch(PlantCareActionSetUserData(newName: name, newEmail: email))
             dispatch(PlantCareActionSetLoggedInStatus(loggedInStatus: .loggedIn, needsOnBoarding: needsOnBoarding))
@@ -100,19 +100,18 @@ class AuthApiClass: ObservableObject {
         Auth0
             .webAuth()
             .clearSession(federated: false) { result in
-            if result {
-                DispatchQueue.main.async {
-                    dispatch(PlantCareActionSetLoggedInStatus(loggedInStatus: .loggedOut, needsOnBoarding: false))
-                    dispatch(PlantCareActionSetUserData(newName: "", newEmail: ""))
-                }
-                self.credentialsManager.revoke { error in
-                    guard error == nil else {
-                        print("Error: \(error!)")
-                        return
+                if result {
+                    DispatchQueue.main.async {
+                        dispatch(PlantCareActionSetLoggedInStatus(loggedInStatus: .loggedOut, needsOnBoarding: false))
+                        dispatch(PlantCareActionSetUserData(newName: "", newEmail: ""))
+                    }
+                    self.credentialsManager.revoke { error in
+                        guard error == nil else {
+                            print("Error: \(error!)")
+                            return
+                        }
                     }
                 }
             }
-        }
     }
-
 }
