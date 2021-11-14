@@ -92,16 +92,6 @@ struct PlantDetails: View {
         .onChange(of: showImageViewer) { newValue in
             store.dispatch(PlantCareActionUpdateHideNavigation(hideNavigation: newValue))
         }
-        .gesture(DragGesture(minimumDistance: 1, coordinateSpace: .global)
-            .onEnded { value in
-                let horizontalAmount = value.translation.width as CGFloat
-                let verticalAmount = value.translation.height as CGFloat
-            
-                if abs(horizontalAmount) > abs(verticalAmount), horizontalAmount > 0 {
-                    dismissSelf()
-                }
-            }
-        )
     }
     
     func dismissSelf() {
