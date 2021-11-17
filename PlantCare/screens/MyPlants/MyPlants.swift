@@ -23,7 +23,7 @@ struct MyPlants: View {
         NavigationView {
             VStack {
                 Text("My Plants")
-                    .foregroundColor(Color("DarkPurple"))
+                    .foregroundColor(.black)
                     .font(.custom("Mulish-ExtraBold", size: 30))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()

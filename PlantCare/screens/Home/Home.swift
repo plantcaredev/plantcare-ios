@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct Home: View {
-    @ObservedObject private var store = ObservableStore(store: plantCareStore)
+    @State var todoSectionSelection = 0
 
     var body: some View {
-        let name = selectName(store.state)
-        let email = selectEmail(store.state)
         VStack {
-            Text("Hello, \(name)")
-            Text("Your email is: \(email)")
-            Button {
-                store.dispatch(PlantCareThunkLogout)
-            } label: {
-                Text("Logout")
+            HomeTopBanner()
+                .padding()
+            HStack {
+                VStack(alignment: .leading) {
+                    HomePicker()
+                        .padding([.bottom])
+                    HomeTasksTodoSection(selection: $todoSectionSelection)
+                }
+                Spacer()
             }
+            .padding()
+            Spacer()
         }
+
         .frame(maxWidth: .infinity)
     }
 }

@@ -13,12 +13,14 @@ import ReSwiftThunk
 struct AppState: Hashable {
     var plantCare = PlantCareState()
     var plants = PlantsState()
+    var homes = HomesState()
 }
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         plantCare: plantCareReducer(action: action, state: state?.plantCare),
-        plants: plantsReducer(action: action, state: state?.plants)
+        plants: plantsReducer(action: action, state: state?.plants),
+        homes: homesReducer(action: action, state: state?.homes)
     )
 }
 

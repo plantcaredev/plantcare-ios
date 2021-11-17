@@ -27,7 +27,7 @@ struct PlantDetailsHeader: View {
             VStack {
                 HStack {
                     Text(plant.name)
-                        .foregroundColor(Color("DarkPurple"))
+                        .foregroundColor(.black)
                         .font(.custom("Mulish-ExtraBold", size: 30))
                         .padding([.trailing, .leading])
                     Spacer()

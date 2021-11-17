@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct Settings: View {
+    @ObservedObject private var store = ObservableStore(store: plantCareStore)
+
     var body: some View {
-        Text("Settings")
+        VStack {
+            Text("Settings")
+            Button {
+                store.dispatch(PlantCareThunkLogout)
+            } label: {
+                Text("Logout")
+            }
+        }
     }
 }
 

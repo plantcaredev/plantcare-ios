@@ -14,7 +14,6 @@ func plantsReducer(action: Action, state: PlantsState?) -> PlantsState {
     switch action {
     case let action as PlantActionSetFetchingPlants:
         state.fetchingPlants = action.isFetching
-
     default:
         break
     }

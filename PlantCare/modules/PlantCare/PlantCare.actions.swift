@@ -38,6 +38,14 @@ struct PlantCareActionSetLoggedInStatus: Action {
     var needsOnBoarding: Bool
 }
 
+let PlantCareThunkStartApp = Thunk<AppState> { dispatch, _ in
+    dispatch(HomesActionSetHomes(homes: [
+        HomeData(identifier: "uuid1", name: "Eric's Home", description: "Eric and Alyssa's house", owner: "alas.eric@gmail.com", userOwnsHome: true),
+        HomeData(identifier: "uuid2", name: "Parents House", description: "Alas Family house", owner: "parents@example.com", userOwnsHome: false),
+    ]))
+    dispatch(HomesActionSetSelectedHome(selectedHome: "uuid1"))
+}
+
 let PlantCareThunkLaunch = Thunk<AppState> { dispatch, _ in
     if AuthApi.isLoggedIn() {
         AuthApi.postLogin(dispatch: dispatch)

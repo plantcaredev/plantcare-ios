@@ -93,6 +93,7 @@ class AuthApiClass: ObservableObject {
         DispatchQueue.main.async {
             dispatch(PlantCareActionSetUserData(newName: name, newEmail: email))
             dispatch(PlantCareActionSetLoggedInStatus(loggedInStatus: .loggedIn, needsOnBoarding: needsOnBoarding))
+            dispatch(PlantCareThunkStartApp)
         }
     }
 

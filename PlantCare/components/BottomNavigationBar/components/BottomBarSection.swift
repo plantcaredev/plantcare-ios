@@ -18,11 +18,11 @@ struct BottomBarSection: View {
             Text(text)
                 .font(.custom("Mulish-Regular", size: 12))
             Circle()
-                .fill(isSelected ? Color("DarkPurple") : .white)
+                .fill(isSelected ? .black : .white)
                 .frame(width: 10, height: 10)
                 .offset(y: -5)
         }
-        .foregroundColor(isSelected ? Color("DarkPurple") : .gray)
+        .foregroundColor(isSelected ? .black : .gray)
     }
 }
 

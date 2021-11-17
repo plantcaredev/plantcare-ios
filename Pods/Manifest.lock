@@ -3,6 +3,7 @@ PODS:
     - JWTDecode (~> 2.0)
     - SimpleKeychain
   - JWTDecode (2.6.3)
+  - lottie-ios (3.2.3)
   - ReSwift (6.1.0)
   - ReSwiftThunk (2.0.1):
     - ReSwift (~> 6.0)
@@ -13,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Auth0 (~> 1.0)
+  - lottie-ios
   - ReSwift
   - ReSwiftThunk
 
@@ -20,6 +22,7 @@ SPEC REPOS:
   trunk:
     - Auth0
     - JWTDecode
+    - lottie-ios
     - ReSwift
     - ReSwiftThunk
     - SimpleKeychain
@@ -27,10 +30,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Auth0: 56b4b681712d10bcfddae89d4a73158abebdf5a6
   JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
   ReSwiftThunk: 7ca5145764be6f30b62db88a52d170133954629e
   SimpleKeychain: 8193a9e40967eccac933c1fde82de46c07a5ae26
 
-PODFILE CHECKSUM: d788775efaa84a455fb868f9c82faa2941163d10
+PODFILE CHECKSUM: c1f224525357e7ed3206a30f8fa2ec6e40f170c5
 
 COCOAPODS: 1.11.2

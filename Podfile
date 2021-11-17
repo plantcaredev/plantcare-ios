@@ -9,5 +9,6 @@ target 'PlantCare' do
   pod 'Auth0', '~> 1.0'
   pod 'ReSwift'
   pod 'ReSwiftThunk'
+  pod 'lottie-ios'
 
 end

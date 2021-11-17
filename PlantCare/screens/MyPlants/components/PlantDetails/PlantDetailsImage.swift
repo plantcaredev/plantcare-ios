@@ -11,46 +11,78 @@ struct PlantDetailsImage: View {
     var plant: PlantUI
     var frameHeight: CGFloat
     var frameWidth: CGFloat
-//    var scrollOffset: CGFloat
+    var topOffset: CGFloat
 
     @Binding var showImageViewer: Bool
-    
+
     var body: some View {
-        VStack {
-            if plant.hasImage {
-                AsyncImage(url: URL(string: plant.image)) { image in
-                    
-                    image.resizable()
-                        .scaledToFill()
-                        .frame(height: frameHeight * 0.35)
-                        .frame(width: frameWidth)
-                        .clipped()
-                        .onTapGesture {
-                            showImageViewer.toggle()
+        ZStack(alignment: .bottom) {
+            VStack {
+                if plant.hasImage {
+                    AsyncImage(url: URL(string: plant.image)) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipped()
+                            .onTapGesture {
+                                showImageViewer.toggle()
+                            }
+                    } placeholder: {
+                        HStack {
+                            Spacer()
+                            ProgressView()
+                                .frame(height: frameHeight * 0.6)
+                                .frame(width: frameWidth)
+                            Spacer()
                         }
-                } placeholder: {
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    }
+                } else {
                     HStack {
                         Spacer()
-                        ProgressView()
-                            .frame(height: frameHeight * 0.35)
-                            .frame(width: frameWidth)
+                        Image("SmallPlant2")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: frameHeight * 0.2)
                         Spacer()
                     }
-                        .frame(maxWidth: .infinity, alignment: .center)
+                    .frame(height: frameHeight * 0.5)
                 }
-            } else {
-                HStack {
-                    Spacer()
-                    Image("SmallPlant2")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: frameHeight * 0.2)
-                    Spacer()
-                }
-                    .frame(height: frameHeight * 0.35)
-                    .background(Color("LightPink"))
             }
+            .frame(width: frameWidth - 40, height: frameHeight * 0.6)
+            .background(plant.hasImage ? .clear : Color("LightPink"))
+            .cornerRadius(20)
+            .padding([.top], topOffset)
+            .clipped()
+            HStack {
+                VStack {
+                    HStack {
+                        Text(plant.name)
+                            .foregroundColor(.white)
+                            .font(.custom("Mulish-ExtraBold", size: 30))
+                            .padding([.trailing, .leading])
+                        Spacer()
+                    }
+                    HStack {
+                        Text(plant.location)
+                            .foregroundColor(.white)
+                            .font(.custom("Mulish-Regular", size: 16))
+                            .padding([.trailing, .leading])
+                        Spacer()
+                    }
+                }
+                Spacer()
+            }
+            .frame(maxWidth: frameWidth - 60)
+            .frame(height: 80)
+            .background(.ultraThinMaterial)
+            .cornerRadius(20)
+            .padding()
         }
+        .background(Color.white
+            .frame(width: frameWidth - 40, height: frameHeight * 0.6)
+            .cornerRadius(20) // any non-transparent background
+            .padding([.top], topOffset)
+            .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 0))
     }
 }
-

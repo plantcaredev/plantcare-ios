@@ -20,7 +20,7 @@ struct PlantList: View {
                         VStack(alignment: .leading) {
                             Text(plant.name)
                                 .font(.custom("Mulish-ExtraBold", size: 20))
-                                .foregroundColor(Color("DarkPurple"))
+                                .foregroundColor(.black)
                                 .padding(.bottom, 1)
                             Text(plant.location)
                                 .font(.custom("Mulish-Regular", size: 14))
