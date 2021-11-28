@@ -32,7 +32,6 @@
 		8154E45C2739CFDA0070B0E9 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E45B2739CFDA0070B0E9 /* SearchField.swift */; };
 		8154E45F273AEA570070B0E9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E45E273AEA570070B0E9 /* ArrayExtensions.swift */; };
 		8154E461273AEA910070B0E9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E460273AEA910070B0E9 /* ViewExtensions.swift */; };
-		8154E466273AFF450070B0E9 /* PlantListingActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */; };
 		8154E468273B00440070B0E9 /* PlantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E467273B00440070B0E9 /* PlantList.swift */; };
 		8154E48C273C35340070B0E9 /* Plants.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48B273C35340070B0E9 /* Plants.reducer.swift */; };
 		8154E48E273C35450070B0E9 /* Plants.state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154E48D273C35450070B0E9 /* Plants.state.swift */; };
@@ -69,6 +68,7 @@
 		81CF52C02744504200D436C8 /* Homes.state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF52BF2744504200D436C8 /* Homes.state.swift */; };
 		81CF52C22744504C00D436C8 /* Homes.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF52C12744504C00D436C8 /* Homes.actions.swift */; };
 		81CF52C42744505600D436C8 /* Homes.selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF52C32744505600D436C8 /* Homes.selectors.swift */; };
+		81DC6A0327469752000D5C92 /* ViewExtractor in Frameworks */ = {isa = PBXBuildFile; productRef = 81DC6A0227469752000D5C92 /* ViewExtractor */; };
 		8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43EE422B022ED8EED2A8BF /* Pods_PlantCare.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +100,6 @@
 		8154E45B2739CFDA0070B0E9 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		8154E45E273AEA570070B0E9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		8154E460273AEA910070B0E9 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListingActionBar.swift; sourceTree = "<group>"; };
 		8154E467273B00440070B0E9 /* PlantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantList.swift; sourceTree = "<group>"; };
 		8154E48B273C35340070B0E9 /* Plants.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.reducer.swift; sourceTree = "<group>"; };
 		8154E48D273C35450070B0E9 /* Plants.state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.state.swift; sourceTree = "<group>"; };
@@ -145,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DC6A0327469752000D5C92 /* ViewExtractor in Frameworks */,
 				811819BC273F089C00F0994B /* ImageViewer in Frameworks */,
 				8F943390F2F5C2C354043DB9 /* Pods_PlantCare.framework in Frameworks */,
 				811819BE273F089C00F0994B /* ImageViewerRemote in Frameworks */,
@@ -331,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				811819B5273EE0FB00F0994B /* PlantDetails */,
-				8154E465273AFF450070B0E9 /* PlantListingActionBar.swift */,
 				8154E467273B00440070B0E9 /* PlantList.swift */,
 				8154E497273C751C0070B0E9 /* FullScreenImage.swift */,
 			);
@@ -518,6 +517,7 @@
 			packageProductDependencies = (
 				811819BB273F089C00F0994B /* ImageViewer */,
 				811819BD273F089C00F0994B /* ImageViewerRemote */,
+				81DC6A0227469752000D5C92 /* ViewExtractor */,
 			);
 			productName = PlantCare;
 			productReference = 8125926D2730320F00BCBD7E /* PlantCare.app */;
@@ -549,6 +549,7 @@
 			mainGroup = 812592642730320F00BCBD7E;
 			packageReferences = (
 				811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+				81DC6A0127469752000D5C92 /* XCRemoteSwiftPackageReference "ViewExtractor" */,
 			);
 			productRefGroup = 8125926E2730320F00BCBD7E /* Products */;
 			projectDirPath = "";
@@ -625,7 +626,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8154E466273AFF450070B0E9 /* PlantListingActionBar.swift in Sources */,
 				8154E498273C751C0070B0E9 /* FullScreenImage.swift in Sources */,
 				811819C0273F13EA00F0994B /* DetailsViewDismissButton.swift in Sources */,
 				8154E468273B00440070B0E9 /* PlantList.swift in Sources */,
@@ -894,6 +894,14 @@
 				version = 2.3.1;
 			};
 		};
+		81DC6A0127469752000D5C92 /* XCRemoteSwiftPackageReference "ViewExtractor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GeorgeElsham/ViewExtractor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -906,6 +914,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 811819BA273F089C00F0994B /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
 			productName = ImageViewerRemote;
+		};
+		81DC6A0227469752000D5C92 /* ViewExtractor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DC6A0127469752000D5C92 /* XCRemoteSwiftPackageReference "ViewExtractor" */;
+			productName = ViewExtractor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

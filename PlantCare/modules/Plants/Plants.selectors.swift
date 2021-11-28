@@ -30,3 +30,15 @@ let selectPlants = createSelector(selector1: selectPlantState) { plantState -> [
         PlantUI(plant: plant)
     }
 }
+
+typealias RoomToPlants = [String: [PlantUI]]
+let selectRoomToPlants = createSelector(selector1: selectPlants) { plants -> RoomToPlants in
+    var roomToPlants: RoomToPlants = [:]
+    for plant in plants {
+        if roomToPlants[plant.location] == nil {
+            roomToPlants[plant.location] = [] as [PlantUI]
+        }
+        roomToPlants[plant.location]?.append(plant)
+    }
+    return roomToPlants
+}

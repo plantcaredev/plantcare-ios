@@ -11,15 +11,8 @@ struct MyPlants: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
 
     @State var searchTerm: String = ""
-    @State private var filterRoomSelection: String = "All"
 
     var body: some View {
-        let plants = selectPlants(store.state)
-
-        let plantsFiltered = searchTerm.count > 0 ? plants.filter { $0.name.contains(searchTerm) } : plants
-        let plantsToShow = filterRoomSelection != "All" ? plantsFiltered.filter { $0.location == filterRoomSelection } : plantsFiltered
-        let roomsForFiltering = plants.map { $0.location }.uniqued()
-
         NavigationView {
             VStack {
                 Text("My Plants")
@@ -27,8 +20,11 @@ struct MyPlants: View {
                     .font(.custom("Mulish-ExtraBold", size: 30))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
-                PlantListingActionBar(searchTerm: $searchTerm, filterItemSelection: $filterRoomSelection, availableFilterItems: roomsForFiltering)
-                PlantList(plants: plantsToShow)
+                HStack {
+                    SearchField(text: $searchTerm)
+                }
+                .padding([.trailing, .leading])
+                PlantList(searchingFor: searchTerm)
             }
             .navigationBarHidden(true)
         }
