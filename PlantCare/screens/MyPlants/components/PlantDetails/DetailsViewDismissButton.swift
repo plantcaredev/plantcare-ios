@@ -20,7 +20,7 @@ struct DetailsViewDismissButton: View {
                     Image(systemName: "arrow.backward.circle.fill")
                         .cornerRadius(40)
                         .font(.system(size: 25))
-                        .foregroundStyle(.white, .black.opacity(0.75))
+                        .foregroundStyle(.white, Color("MainDark").opacity(0.75))
                         .offset(x: 0, y: yOffset)
                     Spacer()
                 }

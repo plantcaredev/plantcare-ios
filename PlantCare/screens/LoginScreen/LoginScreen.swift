@@ -35,7 +35,7 @@ struct LoginScreen: View {
                         Text("Login/Register")
                             .font(.custom("Mulish-Regular", size: 16))
                             .padding()
-                            .foregroundColor(Color("DarkPurple"))
+                            .foregroundColor(Color("MainDark"))
                             .frame(maxWidth: .infinity)
                             .background(.white)
                             .cornerRadius(4)
@@ -58,7 +58,7 @@ struct LoginScreen: View {
             maxHeight: .infinity,
             alignment: .topLeading
         )
-        .background(Color("DarkPurple"))
+        .background(Color("MainDark"))
         .onAppear(perform: delayAppearLoginButton)
     }
 

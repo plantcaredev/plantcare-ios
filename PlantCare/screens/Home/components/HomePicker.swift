@@ -16,6 +16,7 @@ struct HomePicker: View {
 
         Text("Welcome back to,")
             .font(.custom("Mulish-ExtraBold", size: 28))
+            .foregroundColor(Color("MainDark"))
         Menu {
             ForEach(homes, id: \.self) { home in
                 Button("\(home.name)") {
@@ -25,10 +26,10 @@ struct HomePicker: View {
         } label: {
             HStack(alignment: .center) {
                 Text("\(selectedHome?.name ?? "")")
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("MainDark"))
                     .font(.custom("Mulish-ExtraBold", size: 25))
                 Image(systemName: "chevron.down")
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("MainDark"))
                 Spacer()
             }
             .frame(maxWidth: .infinity)

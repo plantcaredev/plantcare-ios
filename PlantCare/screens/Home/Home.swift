@@ -25,7 +25,6 @@ struct Home: View {
             .padding()
             Spacer()
         }
-
         .frame(maxWidth: .infinity)
     }
 }

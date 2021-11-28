@@ -14,6 +14,7 @@ struct PlantDetailsContent: View {
                 .padding()
                 .padding([.leading, .trailing])
                 .font(.custom("Mulish-Regular", size: 16))
+                .foregroundColor(Color("MainDark"))
             ForEach(0 ..< 10) { _ in
                 Rectangle()
                     .fill(Color.gray.opacity(0.5))

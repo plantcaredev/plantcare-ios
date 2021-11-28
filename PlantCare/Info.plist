@@ -41,7 +41,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>DarkPurple</string>
+		<string>MainDark</string>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

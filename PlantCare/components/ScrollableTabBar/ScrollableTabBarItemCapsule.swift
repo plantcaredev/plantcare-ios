@@ -18,7 +18,7 @@ struct ScrollableTabBarItemCapsule: View {
         }
         .padding([.top, .bottom], 5)
         .padding([.trailing, .leading])
-        .background(isSelected ? .black : .clear)
+        .background(isSelected ? Color("MainDark") : .clear)
         .foregroundColor(isSelected ? .white : .gray)
         .cornerRadius(8)
     }

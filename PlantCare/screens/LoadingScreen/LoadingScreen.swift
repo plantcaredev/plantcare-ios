@@ -26,7 +26,7 @@ struct LoadingScreen: View {
               maxHeight: .infinity,
               alignment: .topLeading
             )
-        .background(Color("DarkPurple"))
+        .background(Color("MainDark"))
     }
 }
 

@@ -21,13 +21,13 @@ struct PlantDetailsHeader: View {
             }) {
                 Image(systemName: "arrow.backward")
                     .font(.system(size: 20))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("MainDark"))
                     .padding([.leading])
             }
             VStack {
                 HStack {
                     Text(plant.name)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("MainDark"))
                         .font(.custom("Mulish-ExtraBold", size: 30))
                         .padding([.trailing, .leading])
                     Spacer()

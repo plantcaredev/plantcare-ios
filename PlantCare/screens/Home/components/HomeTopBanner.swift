@@ -24,12 +24,13 @@ struct HomeTopBanner: View {
                 ProgressView()
                     .frame(width: 40, height: 40)
             }
-            Text("Hello, \(name)!")
+            Text("Hello, **\(name)**!")
                 .font(.custom("Mulish-Regular", size: 16))
+                .foregroundColor(Color("MainDark"))
             Spacer()
             VStack {
                 Image(systemName: "bell.badge")
-                    .foregroundStyle(.red, .black)
+                    .foregroundStyle(.red, Color("MainDark"))
             }
             .frame(width: 40, height: 40)
             .background(.white)

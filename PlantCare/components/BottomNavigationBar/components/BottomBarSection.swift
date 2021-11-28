@@ -18,16 +18,10 @@ struct BottomBarSection: View {
             Text(text)
                 .font(.custom("Mulish-Regular", size: 12))
             Circle()
-                .fill(isSelected ? .black : .white)
+                .fill(isSelected ? Color("MainDark") : .white)
                 .frame(width: 10, height: 10)
                 .offset(y: -5)
         }
-        .foregroundColor(isSelected ? .black : .gray)
+        .foregroundColor(isSelected ? Color("MainDark") : .gray)
     }
 }
-
-// struct BottomBarSection_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BottomBarSection()
-//    }
-// }
