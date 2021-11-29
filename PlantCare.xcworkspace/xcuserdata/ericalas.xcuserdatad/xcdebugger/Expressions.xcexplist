@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in closure #1 in PlantList.body.getter:PlantList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rooms.">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in AuthApiClass.retrieveUserData(accessToken:sub:dispatch:):AuthApi.swift">
          <PersistentStrings>
             <PersistentString

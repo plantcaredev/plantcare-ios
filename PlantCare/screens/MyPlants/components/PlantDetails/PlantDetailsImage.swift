@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct PlantDetailsImage: View {
     var plant: PlantUI
@@ -19,13 +20,14 @@ struct PlantDetailsImage: View {
         ZStack(alignment: .bottom) {
             VStack {
                 if plant.hasImage {
-                    AsyncImage(url: URL(string: plant.image)) { image in
+                    CachedAsyncImage(url: URL(string: plant.image)) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
                             .onTapGesture {
                                 showImageViewer.toggle()
+
                             }
                     } placeholder: {
                         HStack {

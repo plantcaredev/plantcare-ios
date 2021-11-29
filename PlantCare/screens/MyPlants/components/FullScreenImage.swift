@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct FullScreenImage: View {
     var imageName: String?
@@ -27,7 +28,7 @@ struct FullScreenImage: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         } else if imageUrl != nil {
-            AsyncImage(url: URL(string: imageUrl!)) { image in
+            CachedAsyncImage(url: URL(string: imageUrl!)) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)

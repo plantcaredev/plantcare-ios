@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct HomeTopBanner: View {
     @ObservedObject private var store = ObservableStore(store: plantCareStore)
@@ -14,7 +15,7 @@ struct HomeTopBanner: View {
         let name = selectName(store.state)
 
         HStack {
-            AsyncImage(url: URL(string: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png")) { image in
+            CachedAsyncImage(url: URL(string: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png")) { image in
                 image
                     .resizable()
                     .scaledToFit()

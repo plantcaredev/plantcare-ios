@@ -2,6 +2,24 @@
   "object": {
     "pins": [
       {
+        "package": "swift-collections",
+        "repositoryURL": "https://github.com/apple/swift-collections.git",
+        "state": {
+          "branch": null,
+          "revision": "48254824bb4248676bf7ce56014ff57b142b77eb",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "CachedAsyncImage",
+        "repositoryURL": "https://github.com/lorenzofiamingo/SwiftUI-CachedAsyncImage",
+        "state": {
+          "branch": null,
+          "revision": "eb489a699be1f6e6c1a19fecdd6bfdc556474fd6",
+          "version": "1.4.0"
+        }
+      },
+      {
         "package": "SwiftUIImageViewer",
         "repositoryURL": "https://github.com/Jake-Short/swiftui-image-viewer.git",
         "state": {

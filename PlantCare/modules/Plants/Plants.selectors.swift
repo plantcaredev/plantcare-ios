@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OrderedCollections
 
 let selectPlantState = createSelector(selector1: { (state: AppState) in state }, { state in state.plants })
 
@@ -31,10 +32,11 @@ let selectPlants = createSelector(selector1: selectPlantState) { plantState -> [
     }
 }
 
-typealias RoomToPlants = [String: [PlantUI]]
+typealias RoomToPlants = OrderedDictionary<String, [PlantUI]>
 let selectRoomToPlants = createSelector(selector1: selectPlants) { plants -> RoomToPlants in
     var roomToPlants: RoomToPlants = [:]
-    for plant in plants {
+    let sortedPlant = plants.sorted { $0.name < $1.name }
+    for plant in sortedPlant {
         if roomToPlants[plant.location] == nil {
             roomToPlants[plant.location] = [] as [PlantUI]
         }

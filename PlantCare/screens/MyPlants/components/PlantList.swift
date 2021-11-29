@@ -7,6 +7,7 @@
 
 import ReSwift
 import SwiftUI
+import CachedAsyncImage
 
 struct PlantList: View {
     @State var roomSelection = 0
@@ -44,7 +45,7 @@ struct PlantList: View {
                                         Spacer()
                                         VStack {
                                             if plant.hasImage {
-                                                AsyncImage(url: URL(string: plant.image)) { image in
+                                                CachedAsyncImage(url: URL(string: plant.image)) { image in
                                                     image.resizable()
                                                         .scaledToFill()
                                                         .frame(width: 75, height: 75)
